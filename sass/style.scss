@@ -1,0 +1,229 @@
+$color-activo: #007fff;
+
+.container{
+	max-width: 960px;
+}
+
+
+h1{
+	/* UI / UX & Fotografía: */
+	font-family: 'Montserrat', arial, sans-serif; 
+	font-size: 48px;
+	font-weight: 800;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+
+.navbar{
+    
+    background-color: transparent;
+    border: none;
+	margin: 0;
+
+	.navbar-toggle{
+		border: none;
+		.icon-bar{
+			background: #fff;
+		}
+		&:hover{
+			background-color: #000;
+			border: none;
+		}
+		&:focus{
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+
+    .navbar-brand {
+	    float: left;
+	    height: 50px;
+	    padding: 15px 15px;
+	    font-size: 25px;
+	    line-height: 25px;
+	    font-family: Montserrat;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    color: #fff;
+	    text-decoration: none;
+		}
+
+		ul.menu li a{
+		    color: #fff;
+		    font-family: Montserrat;
+		    text-transform: uppercase;
+		    font-size: 12px;
+		    font-weight: 500;
+			
+			&:focus{
+			    color: #fff;
+				background-color: transparent;
+	    		}
+			
+
+			&:hover{
+			    color: $color-activo;
+				background-color: transparent;
+	    		}
+			}
+
+			.navbar-nav .active a{
+				    color: #fff;
+				    border-bottom: 2px $color-activo solid;
+					background: transparent;
+
+					&:hover{
+					color: #fff;
+					background: transparent;}
+		}
+
+}
+
+
+
+header{
+	background: url('../img/header.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+
+}
+
+#bio{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 440px;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 20px 0;
+	
+	img{
+		border-radius: 200px;
+
+	}
+
+	h2{
+		/* Santiago J. Rucireto: */
+		font-family: Montserrat-Medium;
+		font-size: 22px;
+		color: #000000;
+	}
+	p{
+		/* Con 29 años de edad: */
+		font-family: 'Montserrat', arial, sans-serif;
+		font-size: 13px;
+		color: #000000;
+		line-height: 24px;
+		text-align: center;
+	}
+
+}
+
+#servicios{
+	background-image: url('../img/servicios-background.jpg');
+	background-size: cover;
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 20px;
+
+	.servicio{
+		background: #FFFFFF;
+		min-height: 300px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 10px;
+		min-width: 300px;
+		box-sizing: border-box;
+		padding: 20px;
+		justify-content: center;
+
+		img{
+			text-align: center;
+
+		}
+		
+		h3{
+			font-family: 'Montserrat', arial, sans-serif;
+			font-size: 18px;
+			color: #000000;
+			text-transform: uppercase;
+		}
+		p{
+
+			font-family: 'Montserrat', arial, sans-serif;
+			font-size: 13px;
+			color: #000000;
+			line-height: 24px;
+		}
+
+	}
+}
+
+
+#porfolio{
+	.trabajo{
+		padding: 0;
+		margin: 0;
+	}	
+}
+
+#contacto{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 316px;
+
+	.contacto{
+		min-width: 300px;
+		box-sizing: border-box;
+		text-align: center;
+		margin: 40px 0;
+
+		h3{
+			font-family: 'Montserrat', arial, sans-serif;
+			font-size: 18px;
+			color: #000000;
+		}
+
+		p{
+
+			font-family: 'Montserrat', arial, sans-serif;
+			font-size: 13px;
+			color: #000000;
+			line-height: 24px;
+		}
+		a{
+			font-family: 'Montserrat', arial, sans-serif;
+			font-size: 13px;
+			color: #000000;
+			line-height: 24px;	
+		}
+
+	}
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 120px;
+	background: #000;
+
+	p{
+		
+		font-family: 'Montserrat', arial, sans-serif;
+		font-size: 13px;
+		color: #FFFFFF;
+	}
+}
